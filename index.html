@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{margin:0; padding: 0; box-sizing: border-box;}
+
+    
+    @media screen and (max-width: 320px){
+
+      .box-yellow{
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: none;
+      }
+     
+      .box-green2{
+      border-bottom-left-radius: 20px;
+      }
+
+    }
+
+    
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .attribution{
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      
+      flex-wrap: wrap;
+      margin-top: 200px;
+
+
+    }
+
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      margin-top: 174px;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .box-yellow{
+      background-color: #E28525;
+      width: 308px;
+      height: 496px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .box-green{
+      background-color: #016972;
+      width: 308px;
+      height: 496px;
+    }
+
+    .box-green2{
+      background-color: #00403F;
+      width: 308px;
+      height: 496px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    h2{
+      color: #fff;
+      text-align: justify;
+      margin-top: 40px;
+      margin-left: 60px;
+      font-size: 35px; 
+      font-family: 'Big Shoulders Display', cursive;  
+    }
+
+    p{
+      color: #fff;
+      text-align: justify;
+      margin-left: 60px;
+      margin-top: 35px;
+      font-size: 15px;
+    }
+
+    .button-yellow{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      
+      background-color: white;
+      color: #E28525;
+      width: 130px;
+      height: 40px;
+      margin-top: 100px;
+      margin-left: 65px;
+      border-radius: 30px;
+      border: none;
+      font-family: 'Lexend Deca', sans-serif;
+      cursor: pointer;
+    }
+
+    .button-green{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      
+      background-color: white;
+      color: #016972;
+      width: 130px;
+      height: 40px;
+      margin-top: 100px;
+      margin-left: 65px;
+      border-radius: 30px;
+      border: none;
+      font-family: 'Lexend Deca', sans-serif;
+      cursor: pointer;
+    }
+
+    .button-green2{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      
+      background-color: white;
+      color: #00403F;
+      width: 130px;
+      height: 40px;
+      margin-top: 100px;
+      margin-left: 65px;
+      border-radius: 30px;
+      border: none;
+      font-family: 'Lexend Deca', sans-serif;
+      cursor: pointer;
+    }
+
+    .logo{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      margin-top: 45px;
+      margin-right: 130px;
+    }
+
+  </style>
+</head>
+<body>
+  
+   <div class="cards">
+  <div class="box-yellow">
+    <div class="logo"><img src="./images/icon-sedans.svg" alt=""></div>
+    
+    <h2>Sedans</h2>
+
+    <p>
+      Choose a sedan for its <br> affordability and excellent <br> fuel economy. Ideal for <br> cruising in the city 
+    or on <br> your next road trip.
+    </p>
+    
+
+    
+
+    <button class="button-yellow" value="button">Learn More</button>
+
+  </div>
+ 
+   <div class="box-green">
+     <div class="logo"><img src="./images/icon-suvs.svg" alt=""></div>
+    <h2>SUVs</h2>
+
+   <p>Take an SUV for its spacious <br> interior, power, and <br> versatility. Perfect for your <br> next family vacation 
+    and <br> off-road adventures.</p> 
+
+    
+
+    <button class="button-green" value="button">Learn More</button>
+   </div>
+  
+  <div class="box-green2">
+    <div class="logo"><img src="./images/icon-luxury.svg" alt=""></div>
+    
+    <h2>Luxury</h2>
+    <p>
+      Cruise in the best car brands <br> without the bloated prices. <br> Enjoy the enhanced comfort <br> of a luxury 
+      rental and arrive <br> in style.
+    </p>
+    
+    
+
+    <button class="button-green2" value="button">Learn More</button>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/samarafarias">Samara Farias</a>.
+  </div>
+
+</body>
+</html>
